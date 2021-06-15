@@ -8,7 +8,7 @@
 
      <!-- <Modal theme="sale" @close="toggleModal"/> -->
 
-       <Modal theme="sale" @close="toggleModal">
+       <Modal theme="" @close="toggleModal">
 
 
 <!-- passing a name slot -->

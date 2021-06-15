@@ -51,6 +51,25 @@ export default {
     color: #03cfbe;
 }
 
+
+.modal .actions{
+    text-align: center;
+    margin: 30px 0 30px 0;
+  
+}
+
+.modal .actions a{
+     color: #333;
+     padding: 8px;
+     border: 1px solid #eee;
+     border-radius: 4px;
+     text-decoration: none;
+     margin: 10px;
+
+
+}
+
+
 .modal.sale{
     background: crimson;
     color: white;
@@ -61,5 +80,9 @@ export default {
 
      color: white;
 
+}
+
+.modal.sale .actions a{
+    color: white;
 }
 </style>
