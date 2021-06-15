@@ -8,6 +8,8 @@
 
      <!-- <Modal theme="sale" @close="toggleModal"/> -->
 
+     <!-- https://youtu.be/KM1U6DqZf8M?list=PL4cUxeGkcC9hYYGbV60Vq3IXYNfDk8At1 -->
+
        <Modal theme="" @close="toggleModal">
 
 
@@ -24,9 +26,20 @@
        </Modal>
     </div>
 
+
+
+
+
+  <div v-if="showModalTwo">
+       <Modal @close="toggleModalTwo">
+         <h1>Sign Up To The News Letter</h1>
+         <p>For Update and Promo Codes</p>
+       </Modal>
+    </div>
     <button @click.alt="toggleModal">Open Modal(alt)</button>
-  <!-- <input type="text" ref="name">
-  <button @click="handleClick">Click Me</button> -->
+
+    <button @click="toggleModalTwo">Open Modal Two</button>
+  
 </template>
 
 <script>
@@ -42,6 +55,7 @@ export default {
     return {
       title: 'My First Vue App',
       showModal: false,
+       showModalTwo: false,
      
 
     }
@@ -56,7 +70,15 @@ export default {
 
       this.showModal = !this.showModal
 
-    }
+    },
+
+
+     toggleModalTwo(){
+
+      this.showModalTwo = !this.showModalTwo
+
+    },
+
   }
 }
 </script>
