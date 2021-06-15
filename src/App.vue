@@ -9,6 +9,16 @@
      <!-- <Modal theme="sale" @close="toggleModal"/> -->
 
        <Modal theme="sale" @close="toggleModal">
+
+
+<!-- passing a name slot -->
+         <template v-slot:links>
+           <a href="#">Sign Up</a>
+            <a href="#">More Info</a>
+         </template>
+
+<!-- passing a Default slot -->
+
          <h1>Joel</h1>
          <p>Grab your data</p>
        </Modal>

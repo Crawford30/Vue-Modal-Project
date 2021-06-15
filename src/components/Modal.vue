@@ -4,6 +4,12 @@
             <slot></slot>
             <!-- <h1>{{ header }}</h1>
             <p>{{text}}</p> -->
+
+
+
+            <div class="actions">
+                <slot name="links"></slot>
+            </div>
         </div>
     </div>
 </template>
